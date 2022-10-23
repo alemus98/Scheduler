@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: lightgoldenrodyellow;
   }
   
   textarea{
@@ -13,18 +14,20 @@ body {
     padding: 10px;
   }
   
-  .jumbotron {
+  .head {
     text-align: center;
-    background-color: transparent;
+    background-color: white;
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    padding-bottom: 55px;
+    padding-top: 55px;
   }
   
-  .description{
-    white-space: pre-wrap;
+  .container{
+    padding-top: 20px;
   }
-  
+
   .time-block{
     text-align: center;
     border-radius: 15px;
@@ -39,7 +42,7 @@ body {
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border-top: 1px solid #000000;
   }
   
   .past {
@@ -65,7 +68,3 @@ body {
     color: white;
   }
   
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }

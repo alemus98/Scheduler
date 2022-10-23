@@ -1,8 +1,8 @@
-var saveBtn = $(".saveBtn");
+var save = $(".saveBtn");
 
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
-saveBtn.on("click", function() {
+save.on("click", function() {
     var time = $(this).siblings(".hour").text();
     var plan = $(this).siblings(".plan").val();
     localStorage.setItem(time, plan);
@@ -11,11 +11,11 @@ saveBtn.on("click", function() {
 function savePlanner() {
 
     $(".hour").each(function() {
-        var currHour = $(this).text();
-        var currPlan = localStorage.getItem(currHour);
+        var currentHour = $(this).text();
+        var currentPlan = localStorage.getItem(currentHour);
 
-        if(currPlan !== null) {
-            $(this).siblings(".plan").val(currPlan);
+        if(currentPlan !== null) {
+            $(this).siblings(".plan").val(currentPlan);
         }
     });
 }
@@ -24,11 +24,11 @@ function timeColor() {
     var hour = moment().hours();
 
     $(".time-block").each(function() {
-        var currHour = parseInt($(this).attr("id"));
+        var currentHour = parseInt($(this).attr("id"));
 
-        if (currHour > hour) {
+        if (currentHour > hour) {
             $(this).addClass("future");
-        } else if (currHour === hour) {
+        } else if (currentHour === hour) {
             $(this).addClass("present");
         } else {
             $(this).addClass("past");
