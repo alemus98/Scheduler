@@ -6,7 +6,7 @@ This is a simple calender scheduler tool that lets users record and save events 
 The sceduler can be found found here! https://alemus98.github.io/Scheduler/
 
 Website Preview
-![Preview](./assets/Screenshot%202022-08-27%20002224.png)
+![Preview](./assets/Screenshot%202022-10-23%20001355.png)
 
 ## Usage
 Step 1: Load the webpage by clicking on the link here https://alemus98.github.io/Scheduler/
